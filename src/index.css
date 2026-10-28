@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0b0e14;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom crisp dark scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d111a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Flash animations for trade updates and order fills */
+@keyframes flash-green {
+  0% { background-color: rgba(16, 185, 129, 0.4); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flash-red {
+  0% { background-color: rgba(239, 68, 68, 0.4); }
+  100% { background-color: transparent; }
+}
+
+.animate-flash-green {
+  animation: flash-green 0.7s ease-out;
+}
+
+.animate-flash-red {
+  animation: flash-red 0.7s ease-out;
+}

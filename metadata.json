@@ -1,0 +1,6 @@
+{
+  "name": "ApexTrade Pro Crypto Exchange",
+  "description": "Institutional-grade cryptocurrency exchange featuring a sub-millisecond matching engine, real-time L2 order book, double-entry ledger, blockchain custody infrastructure, and distributed microservices architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
